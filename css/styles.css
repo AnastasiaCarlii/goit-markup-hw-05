@@ -53,7 +53,7 @@ svg {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50% -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
 .backdrop {
   position: fixed;
@@ -82,7 +82,7 @@ svg {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transgorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   position: absolute;
@@ -380,21 +380,18 @@ svg {
   text-align: center;
 }
 
-.team-social-item {
-  width: 40px;
-  height: 40px;
-}
 .team-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 }
 .team-social-link:is(:hover, :focus) {
   background-color: var(--special-buttons-color);
@@ -480,22 +477,18 @@ svg {
   display: flex;
   gap: 16px;
 }
-.social-media-item {
-  width: 40px;
-  height: 40px;
-}
-
 .social-media-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--buttons-background-color);
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 }
 .social-media-link:is(:hover, :focus) {
   background: var(--footer-special-color);
